@@ -2,6 +2,7 @@ const glados = async () => {
   const notice = []
   if (!process.env.GLADOS) return
   for (const cookie of String(process.env.GLADOS).split('\n')) {
+    console.log(cookie[0])
     if (!cookie) continue
     try {
       const common = {
